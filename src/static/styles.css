@@ -131,6 +131,33 @@ section h3 {
   font-size: 0.92rem;
 }
 
+/* Delete/unregister button next to participant */
+.participant-delete {
+  margin-left: auto; /* push to the right within .participant-item */
+  background: transparent;
+  border: none;
+  color: #c62828; /* icon color */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.08s ease;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+  color: #9a1c1c;
+  transform: translateY(-1px);
+}
+
+.participant-delete:focus {
+  outline: 2px solid rgba(34,61,122,0.14);
+}
+
 /* Empty state */
 .no-participants {
   color: #6b6b6b;
